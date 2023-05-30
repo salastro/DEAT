@@ -2,9 +2,12 @@ const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 
 const url = 'https://example.com/products'; // Replace with the desired URL
+const proxy = 'http://proxy.example.com:8080'; // Replace with your proxy server and port
 
-async function scrapeProductData(url) {
-  const browser = await puppeteer.launch();
+async function scrapeProductData(url, proxy) {
+  const browser = await puppeteer.launch({
+    args: [`--proxy-server=${proxy}`],
+  });
   const page = await browser.newPage();
   await page.goto(url);
 
@@ -31,7 +34,7 @@ async function scrapeProductData(url) {
 async function main() {
   try {
     console.log('Scraping product data...');
-    const products = await scrapeProductData(url);
+    const products = await scrapeProductData(url, proxy);
     console.log('Scraped product data:', products);
   } catch (error) {
     console.error('Failed to scrape product data:', error);
