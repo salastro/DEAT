@@ -1,0 +1,9 @@
+{
+  "name": "DEAT",
+  "version": "0.1.0",
+  "description": "This project is a simple data extraction and automation tool using JavaScript, Puppeteer, and Cheerio. The goal of the tool is to scrape product information from an ecommerce website, including the product title, price, and image URL.",
+  "main": "data_extraction_tool.js",
+  "repository": "https://github.com/salastro/DEAT.git",
+  "author": "salastro <salah2112004@gmail.com>",
+  "license": "MIT"
+}
