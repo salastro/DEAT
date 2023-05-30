@@ -5,5 +5,9 @@
   "main": "data_extraction_tool.js",
   "repository": "https://github.com/salastro/DEAT.git",
   "author": "salastro <salah2112004@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^20.4.0"
+  }
 }
