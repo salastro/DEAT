@@ -45,3 +45,7 @@ To adapt the script to other websites, you may need to modify the following part
 - Update the `urls` array with the desired website URLs.
 - Update the CSS selectors within the `scrapeProductData` function to match the structure of the target website's product elements.
 - Add or remove data fields as needed, adjusting both the scraping logic and the output data structure.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
